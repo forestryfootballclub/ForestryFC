@@ -112,7 +112,7 @@
 
   <section>
     <h2>Contact</h2>
-    <p>Instagram: <a href="#">@forestry.footballclub</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/forestry.footballclub" target="_blank">@forestry.footballclub</a></p>
   </section>
 
   <footer>
