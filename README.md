@@ -31,6 +31,7 @@
     <div class="gallery">
       <img src="1st.jpg">
       <img src="2nd.jpg">
+      <img src="Size.jpg">
       <img src="Texture.jpg">
     </div>
     <a href="order.html" class="button">Order</a>
