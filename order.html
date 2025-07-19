@@ -64,16 +64,9 @@
   </section>
 
 
- <form id="my-form">
-  <input name="name" type="text" />
-  <input name="email" type="email" />
-  <textarea name="message"></textarea>
-  <button type="submit">ส่งข้อมูล</button>
-</form>
-
 <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbweuyAHCdQqJszT5__5KsN11nGWGFriiSrhBcGkoWMr0Pc37sk5zr1cr3KVsIaJKck7gg/exec';
-  const form = document.forms['my-form'];
+  const scriptURL = 'YOUR_SCRIPT_URL_HERE'; // เปลี่ยนเป็น URL ที่ได้จากการ Deploy
+  const form = document.getElementById('orderForm');
 
   form.addEventListener('submit', e => {
     e.preventDefault();
@@ -81,7 +74,13 @@
       method: 'POST',
       body: new FormData(form)
     })
-    .then(response => alert("ส่งข้อมูลเรียบร้อย!"))
-    .catch(error => alert("เกิดข้อผิดพลาดในการส่งข้อมูล"));
+    .then(response => {
+      alert("ส่งข้อมูลเรียบร้อย!");
+      form.reset(); // ล้างฟอร์ม
+    })
+    .catch(error => {
+      alert("เกิดข้อผิดพลาดในการส่งข้อมูล");
+      console.error('Error!', error.message);
+    });
   });
 </script>
