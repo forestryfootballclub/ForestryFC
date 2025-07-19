@@ -89,7 +89,7 @@
 <body>
 
   <!-- โลโก้ -->
-  <img src="forestry football club.png" alt="forestry football club" class="logo" />
+  <img src="forestry football club.png" style="width: 200px; height: auto; margin: 20px auto 0; display: block;" />
 
   <header>
     <h1>Forestry</h1>
