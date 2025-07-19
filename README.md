@@ -29,7 +29,7 @@
     <h1>Forestry</h1>
     <p>footballclub</p>
   </header>
-
+<p style="color:#d00; font-weight:bold;">
  <div class="price-tag">299</div>
  .price-tag {
   font-size: 48px;
