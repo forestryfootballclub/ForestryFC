@@ -97,7 +97,7 @@
   </header>
 
   <!-- ราคา -->
-  <div class="price-tag">299</div>
+  <div class="price-tag">Price 299 Bath</div>
 
   <section>
     <h2>Products</h2>
