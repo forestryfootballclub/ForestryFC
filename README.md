@@ -23,6 +23,55 @@
 <img src="forestry football club.png" alt="forestry football club"
      style="width: 80px; height: auto; margin: 20px auto 0; display: block;" />
 
+<title>299</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .price-tag {
+      font-size: 15vw;
+      font-weight: 900;
+      color: #fff;
+      padding: 30px 60px;
+      border-radius: 20px;
+      text-align: center;
+      animation: flashColor 2s infinite, pulse 1.5s infinite;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    @keyframes flashColor {
+      0%   { background: #d10000; }
+      25%  { background: #ff6600; }
+      50%  { background: #ffcc00; color: #000; }
+      75%  { background: #006400; }
+      100% { background: #d10000; }
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50%      { transform: scale(1.1); }
+    }
+
+    @media (max-width: 600px) {
+      .price-tag {
+        font-size: 20vw;
+        padding: 20px 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="price-tag">299</div>
+</body>
+</html>
+
 </head>
 <body>
   <header>
