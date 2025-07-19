@@ -64,7 +64,7 @@
 
     /* โลโก้ตรงกลาง */
     .logo {
-      width: 80px;
+      width: 200px;
       height: auto;
       margin: 20px auto 0;
       display: block;
