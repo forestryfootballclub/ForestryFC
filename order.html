@@ -64,27 +64,24 @@
   </section>
 
 
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzwDBwwguFuPfm9cisrwFAGhemcVar_1j8XY0jdeHKsBmvl_Z7Rnu8MN43-sartJXInlw/exec'; // แทนที่ YOUR_SCRIPT_ID ด้วย URL ของ Google Apps Sc	ript ที่ deploy
+ <form id="my-form">
+  <input name="name" type="text" />
+  <input name="email" type="email" />
+  <textarea name="message"></textarea>
+  <button type="submit">ส่งข้อมูล</button>
+</form>
 
-    function submitForm(event) {
-      event.preventDefault();
-      const form = event.target;
-      fetch(scriptURL, {
-        method: 'POST',
-        body: new FormData(form)
-      })
-      .then(response => response.text())
-      .then(result => {
-        alert('ส่งคำสั่งซื้อเรียบร้อย ขอบคุณครับ!');
-        form.reset();
-      })
-      .catch(error => {
-        alert('เกิดข้อผิดพลาดในการส่งข้อมูล กรุณาลองใหม่อีกครั้ง');
-        console.error('Error!', error.message);
-      });
-      return false;
-    }
-  </script>
-</body>
-</html>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbweuyAHCdQqJszT5__5KsN11nGWGFriiSrhBcGkoWMr0Pc37sk5zr1cr3KVsIaJKck7gg/exec';
+  const form = document.forms['my-form'];
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, {
+      method: 'POST',
+      body: new FormData(form)
+    })
+    .then(response => alert("ส่งข้อมูลเรียบร้อย!"))
+    .catch(error => alert("เกิดข้อผิดพลาดในการส่งข้อมูล"));
+  });
+</script>
