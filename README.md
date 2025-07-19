@@ -30,6 +30,8 @@
     <p>footballclub</p>
   </header>
 
+ <div class="price-tag">299</div>
+
   <section>
     <h2>Products</h2>
     <div class="gallery">
