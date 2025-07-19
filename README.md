@@ -31,6 +31,14 @@
   </header>
 
  <div class="price-tag">299</div>
+ .price-tag {
+  font-size: 48px;
+  font-weight: bold;
+  color: #d10000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 
   <section>
     <h2>Products</h2>
