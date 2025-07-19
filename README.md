@@ -29,8 +29,8 @@
   <section>
     <h2>Products</h2>
     <div class="gallery">
-      <img src="D:/Design/Poster/1st.jpg" alt="1st Jersey" />
-      <img src="D:/Design/Poster/2nd.jpg" alt="2nd Jersey" />
+      <img src="1st.jpg">
+      <img src="2nd.jpg">
     </div>
     <a href="order.html" class="button">สั่งซื้อเสื้อ</a>
   </section>
