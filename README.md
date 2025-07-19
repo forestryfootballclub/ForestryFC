@@ -19,7 +19,8 @@
     footer { background:#cc9933; color:#fff; text-align:center; padding:15px; }
     a { color:#006400; text-decoration:none; }
   </style>
-<img src="forestry football club.png" alt="forestry football club" style="max-width: 25%; height: auto; margin-top: 20px;" />
+<img src="forestry football club.png" alt="forestry football club" style="width: 80px; height: auto; margin-top: 20px;" />
+
 </head>
 <body>
   <header>
