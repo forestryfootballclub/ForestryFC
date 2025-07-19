@@ -20,7 +20,7 @@
     a { color:#006400; text-decoration:none; }
   </style>
   
-<img src="logo.png" alt="logo"
+<img src="forestry football club.png" alt="forestry football club"
      style="width: 80px; height: auto; margin: 20px auto 0; display: block;" />
 
 </head>
