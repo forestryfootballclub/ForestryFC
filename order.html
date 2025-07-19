@@ -15,13 +15,24 @@
       background:#006400; color:#fff; border:none; cursor:pointer;
     }
     button:hover { background:#004300; }
+    img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      display: block;
+      margin: auto;
+    }
+    .note {
+      font-size: 0.9em;
+      color: #666;
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Order</h1>
   </header>
-  
+
   <section>
     <form action="https://formspree.io/f/xqalezrp" method="POST">
       <input type="text" name="fullname" placeholder="ชื่อ-สกุล" required />
@@ -39,8 +50,11 @@
         <option>NO</option><option>1</option><option>2</option>
         <option>3</option><option>4</option><option>5</option>
       </select>
-        <input type="text" name="screenname2" placeholder="สกรีน" required />
-      
+      <input type="text" name="screenname1" placeholder="ชื่อสกรีน" required />
+      <span class="note">* ถ้าไม่ต้องการสกรีนให้ใส่ "NO"</span>
+      <input type="number" name="jerseynumber1" placeholder="เบอร์เสื้อ" required />
+      <span class="note">* ถ้าไม่ต้องการเบอร์ให้ใส่ "0" หรือ "NO"</span>
+
       <h3>2nd Jersey</h3>
       <select name="size2" required>
         <option value="">Size</option>
@@ -53,13 +67,17 @@
         <option>NO</option><option>1</option><option>2</option>
         <option>3</option><option>4</option><option>5</option>
       </select>
-        <input type="text" name="screenname2" placeholder="สกรีน" required />
-      
-<p style="color:#d00; font-weight:bold;">
-  * ก่อนSubmitกรุณาแคปหน้าจอการสั่งซื้อ แล้วส่งพร้อมสลิปโอนเงินผ่านทาง Instagram:
-  <a href="https://www.instagram.com/forestry.footballclub" target="_blank">@forestry.footballclub</a>
-</p>
-      <p>Instagram: <a href="#">@forestry.footballclub</a></p>
+      <input type="text" name="screenname2" placeholder="ชื่อสกรีน" required />
+      <span class="note">* ถ้าไม่ต้องการสกรีนให้ใส่ "NO"</span>
+      <input type="number" name="jerseynumber2" placeholder="เบอร์เสื้อ" required />
+      <span class="note">* ถ้าไม่ต้องการเบอร์ให้ใส่ "0" หรือ "NO"</span>
+
+      <p style="color:#d00; font-weight:bold;">
+        *ก่อน Submit กรุณาแคปหน้าจอการสั่งซื้อ แล้วส่งพร้อมสลิปโอนเงินผ่านทาง Instagram:
+        <a href="https://www.instagram.com/forestry.footballclub" target="_blank">@forestry.footballclub</a>
+      </p>
+
+      <p>Instagram: <a href="https://www.instagram.com/forestry.footballclub" target="_blank">@forestry.footballclub</a></p>
 
       <button type="submit">Submit</button>
     </form>
