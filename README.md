@@ -32,7 +32,7 @@
       <img src="1st.jpg">
       <img src="2nd.jpg">
     </div>
-    <a href="order.html" class="button">สั่งซื้อเสื้อ</a>
+    <a href="order.html" class="button">Order</a>
   </section>
 
   <section>
