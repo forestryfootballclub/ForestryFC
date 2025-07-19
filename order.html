@@ -72,29 +72,17 @@
     
     <input type="text" name="size2" placeholder="ขนาด 2" />
     <input type="number" name="quantity2" placeholder="จำนวน 2" />
+<form action="https://formspree.io/f/xqalezrp" method="POST">
+  <input type="text" name="fullname" placeholder="ชื่อ" required />
+  <input type="text" name="phone" placeholder="เบอร์โทร" required />
+  
+  <input type="text" name="size1" placeholder="ขนาด 1" />
+  <input type="number" name="quantity1" placeholder="จำนวน 1" />
+  
+  <input type="text" name="size2" placeholder="ขนาด 2" />
+  <input type="number" name="quantity2" placeholder="จำนวน 2" />
+  
+  <button type="submit">ส่งข้อมูล</button>
+</form>
 
     <button type="submit">ส่งข้อมูล</button>
-  </form>
-</section>
-
-
-<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbyZC1FMcU8PzXrFjaCTNC-wk4Mv2kpflk0sYporzUzdwieVAsVfZsZPMumBjowBeeyx3w/exec'; // เปลี่ยนเป็น URL ที่ได้จากการ Deploy
-  const form = document.getElementById('orderForm');
-
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    fetch(scriptURL, {
-      method: 'POST',
-      body: new FormData(form)
-    })
-    .then(response => {
-      alert("ส่งข้อมูลเรียบร้อย!");
-      form.reset(); // ล้างฟอร์ม
-    })
-    .catch(error => {
-      alert("เกิดข้อผิดพลาดในการส่งข้อมูล");
-      console.error('Error!', error.message);
-    });
-  });
-</script>
